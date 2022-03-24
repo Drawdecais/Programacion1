@@ -12,8 +12,10 @@ for vEdad in vEdades:
     #Elimino de la lista el numero 10
     if vEdad == 10:
         vEdades.remove(10)
-    #Imprimir en pantalla la lista
-    print("edad:", vEdad, "años")
+    else:
+        #Imprimir en pantalla la lista
+        print("edad:", vEdad, "años")
 
 Total = len(vEdades)
 print("ToTal:", Total + 1)
+print(vEdades)
