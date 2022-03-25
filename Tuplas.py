@@ -8,14 +8,14 @@ print("Edades de una población que ha ido a vacunarse:")
 #Declaro la lista de edades
 vEdades = [2, 7, 58, 7, 45, 26, 10, 8, 56, 57, 97, 19, 11, 53, 3, 99, 62, 78, 29, 9, 37, 42, 56, 86, 28, 86, 95, 26, 49, 67, 21, 815, 67, 10, 58, 512, 24, 92, 89, 67, 53, 10, 9, 83, 1, 44, 10, 77, 98, 73, 57]
 
-#Elimino de la lista el numero 10
+#Elimino de la lista el numero 10 y muestor la lista
 for vEdad in vEdades:
     if vEdad == 10:
+        Posicion = vEdades.index(vEdad)
         vEdades.remove(10)
-
-#Imprimir en pantalla la lista
-for vEdad in vEdades:
-    print("edad:", vEdad, "años")
+        print("edad:", vEdades[Posicion], "años")
+    else:
+        print("edad:", vEdad, "años")
 
 Total = len(vEdades)
 print("ToTal:", Total + 1)
